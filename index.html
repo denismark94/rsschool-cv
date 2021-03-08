@@ -2,69 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>HTML, CSS & Git Basics</title>
+  <title>CV</title>
   <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-  <article>
-    <header>Junior developer resume</header>
-    <img class="Photo" src="./img/profile.jpg" alt="Profile logo" width="400" height="400">
-    <div class=name>
-      <h3>General info</h3>
+  <header><h1>Junior developer resume</h1></header> 
+  <main>
+    <figure class="photo">
+      <img src="./img/profile.jpg" alt="Profile logo" width="400" height="400">
+    </figure>
+    
+    <article class=name>
+      <h2>General info</h2>
       <p>
         <b>First Name</b>: Denis<br>
         <b>Last Name</b>: Markin
       </p>
-    </div>
-    <div class="skills">
-      <h3>Skills</h3>
-      <p>
-        Programming languages:
-      </p>
+    </article>
+    <article class="skills">
+      <h2>Skills</h2>
+      <h4>Programming languages:</h4>
       <ul>
         <li>Python;</li>
         <li>Java;</li>
         <li>C#.</li>
       </ul>
-    </div>
-    <div class="examples">
-      <h3>Code examples</h3>
+    </article>
+    <article class="examples">
+      <h2>Code examples</h2>
       <ul>
         <li> <a href="https://github.com/denismark94/WMIWatcher">Audit tool for Windows</a></li>
       </ul>
-    </div>
-    <div class="summary">
-      <h3>Summary</h3>
+    </article>
+    <article class="summary">
+      <h2>Summary</h2>
       <p>
         My goal is to figure out what the frontend developing is, to learn such powerfull tool as JS and its
         frameworks, and thus to prepare for a possible employment as a developer. I’m executive, responsible,
         constantly self-developing, ready to learn new technologies and interested in web technologies and
         developing in general
       </p>
-    </div>
-    <div class="experience">
-      <h3>Experience</h3>
+    </article>
+    <article class="experience">
+      <h2>Experience</h2>
       <p>
         I learn CSS,HTML and JS basics with <a href="https://www.sololearn.com/Profile/3587356">Sololearn</a>,
         practice in Android mobile developing
       </p>
-    </div>
-    <div class="education">
-      <h3>Education</h3>
+    </article>
+    <article class="education">
+      <h2>Education</h2>
       <p>
         I graduated Saratov State University, Faculty of Compuer Science and Information Technologies
       </p>
-    </div>
-    <div class="english">
-      <h3>English skills</h3>
+    </article>
+    <article class="english">
+      <h2>English skills</h2>
       <p>
         My English level is <b>B2</b> (Upper-intermediate)
       </p>
-    </div>
-    <footer>
-      Contact me!<br>
-      Email: <a href="mailto:denismark@mail.ru" target="_blank">denismark@mail.ru</a><br>
-      Telegram: <a href="https://telegram.im/@denismark94" target="_blank">@denismark94</a>
-    </footer>
-  </article>
+    </article>
+    </main>
+  <footer>
+      <section class="contacts">
+        <h5>Contacts:</h5>
+        <ul>
+          <li>
+            <a href="mailto:denismark@mail.ru" target="_blank"><img class="logo" src="./img/email.png" alt="email_logo" height="20"></a></li>
+          <li><a href="https://telegram.im/@denismark94" target="_blank"><img class="logo" src="./img/telegram.png" alt="telegram_logo" height="20"></a></li>
+          <li><a href="https://github.com/denismark94" target="_blank"><img class="logo" src="./img/github.png" alt="github_logo" height="20"></a></li>
+        </ul>
+      </section>
+      <a href="https://rs.school/js/" target="_blank"><img class="rs_logo" src="./img/rs_school_js.svg" alt="rs_logo" height=50></a>
+      <h3 class="year">2021</h3> 
+  </footer>
 </body>
