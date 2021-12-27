@@ -72,47 +72,18 @@ main {
   background-color: rgb(214, 185, 185);
 }
 
-.examples {
-  grid-row: 4;
-  grid-column: 2;
-  font-size: 20px;
-}
-
-.summary {
-  grid-row: 5;
-  grid-column: 1 / span 2;
-}
-
-.experience {
-  grid-row: 6;
-  grid-column: 1 / span 2;
-}
-
-.education {
-  grid-row: 7;
-  grid-column: 1 / span 2; 
-}
-
-.english {
-  grid-row: 8;
-  grid-column: 1 / span 2;
-}
-
 footer {
-  grid-row: 3;
-  grid-column: 1;
-  grid-template: 1fr / repeat(3, 1fr);
-  display: grid;
   padding: 10px;
   text-align: center;
   background-color:lightgrey;
   box-shadow: 5px 4px 1px grey;
   border-top: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .contacts {
-  grid-column: 1;
-  grid-row: 1;
   text-align: center;
 }
 
@@ -162,7 +133,7 @@ footer {
   color: #ddd;
 }
 
-.cm-variable-2 {
+.cm-variable {
   color: #89b6c5;
 }
 
