@@ -24,6 +24,7 @@ header {
   font-size: 30px;
   text-align: center;
   background-color:lightgrey;
+  box-shadow: 5px 4px 1px grey;
 }
 
 main {
@@ -33,6 +34,7 @@ main {
   grid-template: repeat(6, auto) / 1fr 1fr;
   display: grid;
   background-color:lightgrey;
+  box-shadow: 5px 4px 1px grey;
 }
 
 .photo {
@@ -61,6 +63,10 @@ main {
 .skills > h4 {
   min-width: 255px;
   margin: 0 10px;
+}
+
+.pr-lang {
+  color: red;
 }
 
 .examples {
@@ -96,9 +102,9 @@ footer {
   display: grid;
   padding: 10px;
   text-align: center;
-  border-style: solid;
-  border-width: thin;
   background-color:lightgrey;
+  box-shadow: 5px 4px 1px grey;
+  border-top: 1px solid black;
 }
 
 .contacts {
@@ -127,4 +133,46 @@ footer {
   align-self: center;
   justify-self: center;
   margin: 20px;
+}
+
+
+.test {
+  background: linear-gradient(white,black);
+  padding: 10px 20px;
+}
+
+.codewars-code {
+  background-color: #2a2e2e;
+  padding: 5px 10px;
+  color: white;
+}
+
+.cm-keyword {
+  color: #b294bb;
+}
+
+.cm-def {
+  color: #de935f;
+}
+
+.cm-operator {
+  color: #ddd;
+}
+
+.cm-variable-2 {
+  color: #89b6c5;
+}
+
+.cm-property {
+  color: #81a2be;
+}
+.cm-atom {
+  color: #dc7069;
+}
+.cm-number {
+  color: #de935f;
+}
+
+.cm-string {
+  color: #b5bd68;
 }

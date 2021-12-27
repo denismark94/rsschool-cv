@@ -2,37 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CV</title>
+  <title>Denis Markin</title>
   <link href="./style.css" rel="stylesheet">
 </head>
 <body>
   <header><h1>Junior developer resume</h1></header> 
   <main>
     <figure class="photo">
-      <img src="./img/profile.jpg" alt="Profile logo" width="400" height="400">
+      <img src="./img/profile.jpg" alt="Profile logo" width="300px">
     </figure>
     
     <article class=name>
       <h2>General info</h2>
       <p>
         <b>First Name</b>: Denis<br>
-        <b>Last Name</b>: Markin
+        <b>Last Name</b>: Markin<br>
+        <b>Age</b>: 27
       </p>
     </article>
     <article class="skills">
-      <h2>Skills</h2>
-      <h4>Programming languages:</h4>
+      <h2>Professional skills</h2>
       <ul>
-        <li>Python;</li>
-        <li>Java;</li>
-        <li>C#.</li>
+        <li class="pr-lang">Python</li>
+        <li class="pr-lang">Java</li>
+        <li class="pr-lang">C#</li>
+        <li class="pr-lang">HMTL (Basic knowledge)</li>
+        <li class="pr-lang">CSS (Basic knowledge)</li>
+        <li class="pr-lang">JavaScript (Fundamentals)</li>
+        <li class="technology">Git</li>
+        <li class="OS">Windows</li>
+        <li class="OS">Linux (Ubuntu, Debian, Kali)</li>
       </ul>
     </article>
     <article class="examples">
-      <h2>Code examples</h2>
-      <ul>
-        <li> <a href="https://github.com/denismark94/WMIWatcher">Audit tool for Windows</a></li>
-      </ul>
+      <h2>Code example</h2>
+     <pre class="codewars-code" ><code><span class="cm-keyword">var</span> <span class="cm-def">isAnagram</span> <span class="cm-operator">=</span> <span class="cm-keyword">function</span>(<span class="cm-def">test</span>, <span class="cm-def">original</span>) {
+  <span class="cm-variable-2">test</span> <span class="cm-operator">=</span> <span class="cm-variable-2">test</span>.<span class="cm-property">toString</span>().<span class="cm-property">toLowerCase</span>();
+  <span class="cm-variable-2">original</span> <span class="cm-operator">=</span> <span class="cm-variable-2">original</span>.<span class="cm-property">toString</span>().<span class="cm-property">toLowerCase</span>();
+  <span class="cm-keyword">if</span> (<span class="cm-variable-2">test</span>.<span class="cm-property">length</span> <span class="cm-operator">!=</span> <span class="cm-variable-2">original</span>.<span class="cm-property">length</span>)
+    <span class="cm-keyword">return</span> <span class="cm-atom">false</span>
+  <span class="cm-keyword">for</span> (<span class="cm-keyword">var</span> <span class="cm-def">i</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>; <span class="cm-variable-2">i</span> <span class="cm-operator">&lt;</span> <span class="cm-variable-2">original</span>.<span class="cm-property">length</span>; <span class="cm-variable-2">i</span><span class="cm-operator">++</span>) {
+    <span class="cm-variable-2">test</span> <span class="cm-operator">=</span> <span class="cm-variable-2">test</span>.<span class="cm-property">replace</span>(<span class="cm-variable-2">original</span>[<span class="cm-variable-2">i</span>],<span class="cm-string">''</span>);
+  }
+  <span class="cm-keyword">return</span> (<span class="cm-variable-2">test</span>.<span class="cm-property">length</span> <span class="cm-operator">==</span> <span class="cm-number">0</span>);
+};</code></pre>
     </article>
     <article class="summary">
       <h2>Summary</h2>
