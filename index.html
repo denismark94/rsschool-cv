@@ -2,61 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CV</title>
+  <title>Denis Markin</title>
   <link href="./style.css" rel="stylesheet">
 </head>
 <body>
   <header><h1>Junior developer resume</h1></header> 
+  <nav>
+    <ul>
+      <li><a href="#name">General info</a></li>
+      <li><a href="#skills">Professional Skills</a></li>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#examples">Code example</a></li>
+      <li><a href="#experience">Projects</a></li>
+      <li><a href="#english">English level</a></li>
+    </ul>
+  </nav>
   <main>
-    <figure class="photo">
-      <img src="./img/profile.jpg" alt="Profile logo" width="400" height="400">
-    </figure>
-    
-    <article class=name>
-      <h2>General info</h2>
-      <p>
-        <b>First Name</b>: Denis<br>
-        <b>Last Name</b>: Markin
-      </p>
-    </article>
-    <article class="skills">
-      <h2>Skills</h2>
-      <h4>Programming languages:</h4>
-      <ul>
-        <li>Python;</li>
-        <li>Java;</li>
-        <li>C#.</li>
-      </ul>
-    </article>
-    <article class="examples">
-      <h2>Code examples</h2>
-      <ul>
-        <li> <a href="https://github.com/denismark94/WMIWatcher">Audit tool for Windows</a></li>
-      </ul>
-    </article>
-    <article class="summary">
+    <div class="general">
+      <figure class="photo">
+        <img src="./img/profile.jpg" alt="Profile logo" width="300">
+      </figure>
+      <div class="gentext">
+        <section id="name" class="name">
+          <h2>General info</h2>
+          <p>
+            <b>First Name</b>: Denis<br>
+            <b>Last Name</b>: Markin<br>
+            <b>Age</b>: 27<br>
+            <b>Education</b>: Higher technical (Saratov State University) 
+          </p>
+        </section>
+        <section id="skills" class="skills">
+          <h2>Professional skills</h2>
+          <ul>
+            <li class="pr-lang">Python</li>
+            <li class="pr-lang">Java</li>
+            <li class="pr-lang">C#</li>
+            <li class="pr-lang">HMTL (Basic knowledge)</li>
+            <li class="pr-lang">CSS (Basic knowledge)</li>
+            <li class="pr-lang">JavaScript (Fundamentals)</li>
+            <li class="technology">Git</li>
+            <li class="OS">Windows</li>
+            <li class="OS">Linux (Ubuntu, Debian, Kali)</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <article id="summary" class="summary">
       <h2>Summary</h2>
       <p>
-        My goal is to figure out what the frontend developing is, to learn such powerfull tool as JS and its
+        My goal is to figure out what the frontend developing is, to learn such powerfull tool as JS and it's
         frameworks, and thus to prepare for a possible employment as a developer. I’m executive, responsible,
         constantly self-developing, ready to learn new technologies and interested in web technologies and
         developing in general
       </p>
     </article>
-    <article class="experience">
+    <article id="examples" class="examples">
+      <h2>Code example</h2>
+     <pre class="codewars-code" ><code><span class="cm-keyword">var</span> <span class="cm-def">isAnagram</span> <span class="cm-operator">=</span> <span class="cm-keyword">function</span>(<span class="cm-def">test</span>, <span class="cm-def">original</span>) {
+  <span class="cm-variable">test</span> <span class="cm-operator">=</span> <span class="cm-variable">test</span>.<span class="cm-property">toString</span>().<span class="cm-property">toLowerCase</span>();
+  <span class="cm-variable">original</span> <span class="cm-operator">=</span> <span class="cm-variable">original</span>.<span class="cm-property">toString</span>().<span class="cm-property">toLowerCase</span>();
+  <span class="cm-keyword">if</span> (<span class="cm-variable">test</span>.<span class="cm-property">length</span> <span class="cm-operator">!=</span> <span class="cm-variable">original</span>.<span class="cm-property">length</span>)
+    <span class="cm-keyword">return</span> <span class="cm-atom">false</span>
+  <span class="cm-keyword">for</span> (<span class="cm-keyword">var</span> <span class="cm-def">i</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>; <span class="cm-variable">i</span> <span class="cm-operator">&lt;</span> <span class="cm-variable">original</span>.<span class="cm-property">length</span>; <span class="cm-variable">i</span><span class="cm-operator">++</span>) {
+    <span class="cm-variable">test</span> <span class="cm-operator">=</span> <span class="cm-variable">test</span>.<span class="cm-property">replace</span>(<span class="cm-variable">original</span>[<span class="cm-variable">i</span>],<span class="cm-string">''</span>);
+  }
+  <span class="cm-keyword">return</span> (<span class="cm-variable">test</span>.<span class="cm-property">length</span> <span class="cm-operator">==</span> <span class="cm-number">0</span>);
+};</code></pre>
+    </article>
+
+    <article id="experience" class="experience">
       <h2>Experience</h2>
-      <p>
-        I learn CSS,HTML and JS basics with <a href="https://www.sololearn.com/Profile/3587356">Sololearn</a>,
-        practice in Android mobile developing
-      </p>
+      <h3>Training projects:</h3>
+      <ul>
+        <li><a href="https://denismark94.github.io/rsschool-cv/">Junior Developer CV</a></li>
+        <li><a href="https://github.com/denismark94/WMIWatcher">Audit tool for Windows</a></li>
+        <li><a href="https://denismark94.github.io/singolo/singolo1.html">Singolo</a></li>
+        <li><a href="https://rolling-scopes-school.github.io/denismark94-JSFE2021Q1/virtual-piano/">Virtual Piano</a></li>
+        <li><a href="https://rolling-scopes-school.github.io/denismark94-JSFE2021Q1/wildlife/">Wildlife</a></li>
+      </ul>
     </article>
-    <article class="education">
-      <h2>Education</h2>
-      <p>
-        I graduated Saratov State University, Faculty of Compuer Science and Information Technologies
-      </p>
-    </article>
-    <article class="english">
+    <article id="english" class="english">
       <h2>English skills</h2>
       <p>
         My English level is <b>B2</b> (Upper-intermediate)
