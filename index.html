@@ -7,13 +7,23 @@
 </head>
 <body>
   <header><h1>Junior developer resume</h1></header> 
+  <nav>
+    <ul>
+      <li><a href="#name">General info</a></li>
+      <li><a href="#skills">Professional Skills</a></li>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#examples">Code example</a></li>
+      <li><a href="#experience">Projects</a></li>
+      <li><a href="#english">English level</a></li>
+    </ul>
+  </nav>
   <main>
-    <article class="general">
+    <div class="general">
       <figure class="photo">
-        <img src="./img/profile.jpg" alt="Profile logo" width="300px">
+        <img src="./img/profile.jpg" alt="Profile logo" width="300">
       </figure>
-      <section class="gentext">
-        <section class="name">
+      <div class="gentext">
+        <section id="name" class="name">
           <h2>General info</h2>
           <p>
             <b>First Name</b>: Denis<br>
@@ -22,7 +32,7 @@
             <b>Education</b>: Higher technical (Saratov State University) 
           </p>
         </section>
-        <section class="skills">
+        <section id="skills" class="skills">
           <h2>Professional skills</h2>
           <ul>
             <li class="pr-lang">Python</li>
@@ -36,9 +46,9 @@
             <li class="OS">Linux (Ubuntu, Debian, Kali)</li>
           </ul>
         </section>
-      </section>
-    </article>
-    <article class="summary">
+      </div>
+    </div>
+    <article id="summary" class="summary">
       <h2>Summary</h2>
       <p>
         My goal is to figure out what the frontend developing is, to learn such powerfull tool as JS and it's
@@ -47,7 +57,7 @@
         developing in general
       </p>
     </article>
-    <article class="examples">
+    <article id="examples" class="examples">
       <h2>Code example</h2>
      <pre class="codewars-code" ><code><span class="cm-keyword">var</span> <span class="cm-def">isAnagram</span> <span class="cm-operator">=</span> <span class="cm-keyword">function</span>(<span class="cm-def">test</span>, <span class="cm-def">original</span>) {
   <span class="cm-variable">test</span> <span class="cm-operator">=</span> <span class="cm-variable">test</span>.<span class="cm-property">toString</span>().<span class="cm-property">toLowerCase</span>();
@@ -61,7 +71,7 @@
 };</code></pre>
     </article>
 
-    <article class="experience">
+    <article id="experience" class="experience">
       <h2>Experience</h2>
       <h3>Training projects:</h3>
       <ul>
@@ -71,18 +81,8 @@
         <li><a href="https://rolling-scopes-school.github.io/denismark94-JSFE2021Q1/virtual-piano/">Virtual Piano</a></li>
         <li><a href="https://rolling-scopes-school.github.io/denismark94-JSFE2021Q1/wildlife/">Wildlife</a></li>
       </ul>
-      <p>
-        I learn CSS,HTML and JS basics with <a href="https://www.sololearn.com/Profile/3587356">Sololearn</a>,
-        practice in Android mobile developing
-      </p>
     </article>
-    <article class="education">
-      <h2>Education</h2>
-      <p>
-        I graduated Saratov State University, Faculty of Compuer Science and Information Technologies
-      </p>
-    </article>
-    <article class="english">
+    <article id="english" class="english">
       <h2>English skills</h2>
       <p>
         My English level is <b>B2</b> (Upper-intermediate)

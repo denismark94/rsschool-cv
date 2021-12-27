@@ -22,7 +22,28 @@ header {
   font-size: 30px;
   text-align: center;
   background-color:lightgrey;
-  box-shadow: 5px 4px 1px grey;
+  box-shadow: 5px 4px 5px grey;
+}
+
+nav {
+  background-color:lightgrey;
+  box-shadow: 5px 4px 5px grey;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  justify-self: center;
+  padding: 0 10px;
+}
+nav a {
+  text-decoration: none;
+  background-color: floralwhite;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 20px;
 }
 
 main {
@@ -30,7 +51,7 @@ main {
   display: flex;
   flex-direction: column;
   background-color:lightgrey;
-  box-shadow: 5px 4px 1px grey;
+  box-shadow: 5px 4px 5px grey;
 }
 
 .general {
@@ -44,6 +65,7 @@ main {
 
 .photo > img {
   box-shadow: 2px 2px 20px grey;
+  border: 1px solid black;
 }
 
 .gentext {
@@ -76,7 +98,7 @@ footer {
   padding: 10px;
   text-align: center;
   background-color:lightgrey;
-  box-shadow: 5px 4px 1px grey;
+  box-shadow: 5px 4px 5px grey;
   border-top: 1px solid black;
   display: flex;
   flex-direction: row;
@@ -107,12 +129,6 @@ footer {
   align-self: center;
   justify-self: center;
   margin: 20px;
-}
-
-
-.test {
-  background: linear-gradient(white,black);
-  padding: 10px 20px;
 }
 
 .codewars-code {
